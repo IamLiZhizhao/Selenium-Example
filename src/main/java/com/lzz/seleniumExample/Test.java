@@ -97,6 +97,7 @@ public class Test {
             webDriver = webDriver.switchTo().window(handle);
         }
         Thread.sleep(4000);
+
 //        ((JavascriptExecutor)webDriver).executeScript(
 //                "window.print();");
 //

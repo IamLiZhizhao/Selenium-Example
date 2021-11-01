@@ -18,6 +18,26 @@ public class DriverPathUtils {
 
     private static final String CHROME_PATH_PROD = "C:\\Users\\onegene\\AppData\\Local\\Google\\Chrome\\User Data";
 
+    private static final String PRINT_FOLDER_PATH = "D:\\tmpPrint";
+
+    private static final String PRINT_HTML_PATH = PRINT_FOLDER_PATH + File.separator + "print.html";
+    private static final String PRINT_PDF_PATH = PRINT_FOLDER_PATH + File.separator + "print.pdf";
+
+
+    public static String getPrintFolderPath() {
+        return PRINT_FOLDER_PATH;
+    }
+
+    public static String getPrintHtmlPath() {
+        return PRINT_HTML_PATH;
+    }
+
+    public static String getPrintPdfPath() {
+        return PRINT_PDF_PATH;
+    }
+
+
+
     /**
      *  path
      * @return  path
