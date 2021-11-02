@@ -1,6 +1,7 @@
 package com.lzz.seleniumExample;
 
 import com.lzz.seleniumExample.utils.DriverPathUtils;
+import com.lzz.seleniumExample.utils.PropertiesUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -33,4 +34,10 @@ class SeleniumExampleApplicationTests {
         System.out.println(File.pathSeparator);
     }
 
+    @Test
+    void checkProperty() {
+        System.out.println(PropertiesUtils.getProperty("chrome.exe.path"));
+        System.out.println(PropertiesUtils.getProperty("helloBean.helloWorld"));
+
+    }
 }
